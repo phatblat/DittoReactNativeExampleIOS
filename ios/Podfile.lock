@@ -1,6 +1,40 @@
 PODS:
   - boost (1.83.0)
   - CocoaAsyncSocket (7.6.5)
+  - DittoReactNative (4.5.0):
+    - DittoReactNative/boost (= 4.5.0)
+    - React-Core
+  - DittoReactNative/boost (4.5.0):
+    - DittoReactNative/boost/config (= 4.5.0)
+    - DittoReactNative/boost/smart_ptr (= 4.5.0)
+    - React-Core
+  - DittoReactNative/boost/config (4.5.0):
+    - DittoReactNative/boost/config/abi (= 4.5.0)
+    - DittoReactNative/boost/config/compiler (= 4.5.0)
+    - DittoReactNative/boost/config/detail (= 4.5.0)
+    - DittoReactNative/boost/config/no_tr1 (= 4.5.0)
+    - DittoReactNative/boost/config/platform (= 4.5.0)
+    - DittoReactNative/boost/config/stdlib (= 4.5.0)
+    - React-Core
+  - DittoReactNative/boost/config/abi (4.5.0):
+    - React-Core
+  - DittoReactNative/boost/config/compiler (4.5.0):
+    - React-Core
+  - DittoReactNative/boost/config/detail (4.5.0):
+    - React-Core
+  - DittoReactNative/boost/config/no_tr1 (4.5.0):
+    - React-Core
+  - DittoReactNative/boost/config/platform (4.5.0):
+    - React-Core
+  - DittoReactNative/boost/config/stdlib (4.5.0):
+    - React-Core
+  - DittoReactNative/boost/smart_ptr (4.5.0):
+    - DittoReactNative/boost/smart_ptr/detail (= 4.5.0)
+    - React-Core
+  - DittoReactNative/boost/smart_ptr/detail (4.5.0):
+    - React-Core
+  - DittoReactNativeIOS (4.5.0):
+    - React-Core
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.73.0)
   - FBReactNativeSpec (0.73.0):
@@ -1116,6 +1150,8 @@ PODS:
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - "DittoReactNative (from `../node_modules/@dittolive/ditto`)"
+  - DittoReactNativeIOS
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -1192,6 +1228,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - CocoaAsyncSocket
+    - DittoReactNativeIOS
     - Flipper
     - Flipper-Boost-iOSX
     - Flipper-DoubleConversion
@@ -1208,6 +1245,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
+  DittoReactNative:
+    :path: "../node_modules/@dittolive/ditto"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -1307,6 +1346,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost: 26fad476bfa736552bbfa698a06cc530475c1505
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  DittoReactNative: f39b02a743a3e65bb12c415e56737bca4161e1cc
+  DittoReactNativeIOS: 5eb429d70b1b2b854293aaa3e9616a8088ca76e8
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
   FBLazyVector: 39ba45baf4e398618f8b3a4bb6ba8fcdb7fc2133
   FBReactNativeSpec: 20cfca68498e27879514790359289d1df2b52c56
@@ -1367,6 +1408,6 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 44003f970aa541b79dfdd59cf236fda41bd5890f
 
-PODFILE CHECKSUM: bfaa0fbda94039f4dde0317be0a5daccfc095c6f
+PODFILE CHECKSUM: eab1389c2c48260ff91c4ee91fe3de1f5ab9f7c6
 
 COCOAPODS: 1.14.3

@@ -28,6 +28,9 @@ end
 target 'DittoReactNativeExampleIOS' do
   config = use_native_modules!
 
+  pod "DittoReactNativeIOS"
+  #, :path => "../../../ditto/ditto/js/react-native/ios/DittoReactNativeIOS.podspec"
+
   use_react_native!(
     :path => config[:reactNativePath],
     # Enables Flipper.
